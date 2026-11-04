@@ -2,6 +2,8 @@
 export const pageHtml = `
 
 
+<main>
+
 <section class="tp-page-hero">
 <div class="container">
 <span class="eyebrow">Help & Information</span>
@@ -168,5 +170,7 @@ support@tubepilot.shop
 </div>
 </div>
 </section>
+
+</main>
 
 `;

@@ -173,4 +173,4 @@ For account, billing, product or partnership questions, contact our support team
 support@tubepilot.shop
 </a></div>
 </div>
-</section>`;
+</section></main><!-- FOOTER -->`;

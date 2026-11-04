@@ -1,6 +1,6 @@
 // Migrated from founder.html — TubePilot static site (main content only).
 export const pageHtml = `
-<section class="tp-page-hero">
+<!-- MAIN CONTENT --><main><section class="tp-page-hero">
 <div class="container"><span class="eyebrow">Founder profile</span>
 
 <h1>Anik Kumar — Founder of TubePilot</h1><p class="meta">TubePilot · Create · Optimize · Schedule · Grow</p></div>
@@ -35,4 +35,4 @@ supplied for publication, so they are intentionally not invented here.
 For product enquiries, contact
 <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a>.
 </p></div>
-</section>`;
+</section></main><!-- FOOTER -->`;
