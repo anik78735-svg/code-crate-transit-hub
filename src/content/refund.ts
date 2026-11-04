@@ -1,0 +1,198 @@
+// Migrated from refund.html — TubePilot static site (main content only).
+export const pageHtml = `
+TYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Refund Policy — TubePilot</title>
+<meta name="description" content="Read TubePilot's refund policy for free uploads, cancelled uploads, diamond purchases, failed uploads and refund requests.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="/refund">
+  <link rel="alternate" hreflang="en" href="/refund"><meta property="og:type" content="website">
+<meta property="og:title" content="Refund Policy — TubePilot">
+<meta property="og:description" content="Understand TubePilot's refund rules for diamond purchases and video uploads.">
+<meta property="og:url" content="https://www.tubepilot.shop/refund.html">
+<meta property="og:image" content="https://www.tubepilot.shop/assets/logo.png">
+<meta property="og:site_name" content="TubePilot"><meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Refund Policy — TubePilot">
+<meta name="twitter:description" content="TubePilot's refund policy for diamond purchases and uploads.">
+<meta name="twitter:image" content="https://www.tubepilot.shop/assets/logo.png"><link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><base target="_blank"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.tubepilot.shop/#organization",
+      "name": "Bharat Cloud Technologies",
+      "url": "https://www.tubepilot.shop/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.tubepilot.shop/assets/logo.png"
+      },
+      "email": "support@tubepilot.shop"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.tubepilot.shop/#website",
+      "url": "https://www.tubepilot.shop/",
+      "name": "TubePilot",
+      "publisher": {
+        "@id": "https://www.tubepilot.shop/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.tubepilot.shop/refund.html#webpage",
+      "url": "https://www.tubepilot.shop/refund.html",
+      "name": "Refund Policy — TubePilot",
+      "description": "TubePilot's refund policy for diamond purchases and uploads.",
+      "isPartOf": {
+        "@id": "https://www.tubepilot.shop/#website"
+      },
+      "about": {
+        "@id": "https://www.tubepilot.shop/#organization"
+      },
+      "dateModified": "2026-07-31"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.tubepilot.shop/refund.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.tubepilot.shop/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Refund Policy",
+          "item": "https://www.tubepilot.shop/refund.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- Google Search Console verification: paste your tag here, e.g.
+<meta name="google-site-verification" content="TOKEN"> -->
+</head><body><header class="site-header">
+  <div class="container row">
+    <a class="brand" href="">
+      <span class="mark"><img src="/images/logo.png" alt="TubePilot logo"></span>
+      TubePilot
+    </a><nav class="nav-links" id="nav-links">
+  <a href="#features">Features</a>
+  <a href="#how-it-works">How it works</a>
+  <a href="/privacy">Privacy</a>
+  <a href="/terms">Terms</a>
+  <a href="/refund" aria-current="page">Refund Policy</a>
+  <a href="/contact">Contact</a>
+</nav>
+
+<button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+  <span></span>
+</button>
+
+  </div>
+</header><section class="legal-hero">
+  <div class="container">
+    <span class="eyebrow">Legal</span>
+    <h1>Refund Policy</h1>
+    <p class="meta">Effective date: 31 July 2026</p>
+  </div>
+</section><div class="container">
+  <div class="legal-layout"><nav class="toc" aria-label="Table of contents">
+  <p class="label">On this page</p>
+  <ol>
+    <li><a href="#free-uploads">Free uploads</a></li>
+    <li><a href="#cancelled-uploads">Cancelled uploads</a></li>
+    <li><a href="#diamond-purchases">Diamond purchases</a></li>
+    <li><a href="#failed-uploads">Failed uploads</a></li>
+    <li><a href="#how-to-request">How to request a refund</a></li>
+  </ol>
+</nav>
+
+<article class="legal-body">
+
+  <h2 id="free-uploads">1. Free uploads</h2>
+  <p>Your monthly free-upload allowance has no cash value and is not refundable or transferable. Unused free uploads do not carry over once your allowance resets each month.</p>
+
+  <h2 id="cancelled-uploads">2. Cancelled uploads</h2>
+  <p>If you cancel an upload from the "Upcoming" tab before it completes, the free upload slot or diamonds charged for that upload are automatically returned to your account balance immediately. This happens within the app — no separate request is needed.</p>
+
+  <h2 id="diamond-purchases">3. Diamond purchases</h2>
+  <p>Diamonds are purchased via manual UPI payment, verified by our team before diamonds are credited to your account.</p>
+
+  <ul>
+    <li>If your payment is <strong>rejected</strong> during verification (for example, an unmatched or unverifiable payment), no diamonds are charged, and you should follow up with your payment provider for the status of the payment itself.</li>
+
+    <li>Once diamonds have been <strong>approved and credited</strong> to your account, the purchase is final and non-refundable, except where required by applicable law.</li>
+
+    <li>If you were charged real money but never received the corresponding diamonds due to a verified technical error on our side, contact us with your payment reference and we will credit the correct diamond amount or issue a refund at our discretion.</li>
+  </ul>
+
+  <h2 id="failed-uploads">4. Failed uploads</h2>
+  <p>If an upload fails due to an error on TubePilot's side after credits were charged, you will be notified and the credit is not consumed for a failed attempt — a fresh attempt does not require an additional charge. If a video fails to upload because of a rejection or restriction from YouTube itself (for example, a copyright claim or policy violation on the content), that is outside TubePilot's control and the credit is not refunded, since the upload attempt was successfully made.</p>
+
+  <h2 id="how-to-request">5. How to request a refund</h2>
+  <p>To request a refund covered under this policy, email <a href="mailto:anikkesharwani37@gmail.com">anikkesharwani37@gmail.com</a> with your User ID, the transaction reference, and a description of the issue. You can also reach us through the app's Help &amp; Support menu or the <a href="/contact">Contact page</a>. We aim to respond within 3–5 business days.</p>
+
+</article>
+
+  </div>
+</div><footer class="site-footer">
+<div class="container footer-cta">
+<div>
+<h2>Download Our Android App on Play Store</h2>
+<p>TubePilot — AI-powered YouTube Creator OS by Anik Kumar. Free to install.</p>
+</div>
+<a class="btn btn-lg" href="https://play.google.com/store/apps/details?id=com.tubepilot.app" rel="noopener">Get it on Google Play →</a>
+</div>
+  <div class="container"><div class="footer-grid">
+
+  <div class="footer-brand">
+    <a class="brand" href="" style="margin-bottom:10px;">
+      <span class="mark"><img src="/images/logo.png" alt="TubePilot logo"></span>
+      TubePilot
+    </a>
+    <p>Schedule, bulk-upload, and auto-upload to YouTube — built for creators who'd rather be creating.</p>
+  </div>
+
+  <div class="footer-col">
+    <p class="label">Product</p>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#how-it-works">How it works</a>
+  </div>
+
+  <div class="footer-col">
+    <p class="label">Legal</p>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms of Service</a>
+    <a href="/refund">Refund Policy</a>
+    <a href="/contact">Contact</a>
+  </div>
+
+</div>
+
+<div class="footer-bottom">
+  <span>&copy; <span data-year>2026</span> Bharat Cloud Technologies. All rights reserved.</span>
+  <span>Made in India &middot; <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a></span>
+</div>
+
+  </div>
+</footer><button class="to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L6 11M12 5L18 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button><script src="js/script.js"></script></body>
+</html>`;
