@@ -1,24 +1,30 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { ParsedHtml } from "@/components/site/parsed-html";
+import { pageHtml } from "@/content/index";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "TubePilot AI — YouTube Creator Tools & App | Official Website" },
+      { name: "description", content: "TubePilot AI is an all-in-one YouTube creator platform by Anik Kumar. Create video ideas, generate titles and descriptions, optimize SEO, schedule uploads and track channel performance." },
+      { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" },
+      { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "TubePilot" },
+      { property: "og:title", content: "TubePilot AI — YouTube Creator Tools & App | Official Website" },
+      { property: "og:description", content: "Create, optimize, schedule and grow your YouTube channel with TubePilot. Official website tubepilot.shop" },
+      { property: "og:url", content: "https://www.tubepilot.shop/" },
+      { property: "og:image", content: "https://www.tubepilot.shop/images/logo.png" },
+      { name: "twitter:card", content: "summary" },
+      { name: "twitter:title", content: "TubePilot — AI-Powered YouTube Creator OS" },
+      { name: "twitter:description", content: "AI-powered YouTube Creator OS by Anik Kumar" },
+      { name: "twitter:image", content: "https://www.tubepilot.shop/images/logo.png" },
+    ],
+    links: [{"rel":"canonical","href":"https://www.tubepilot.shop/"}],
+  }),
+  component: IndexPage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
+function IndexPage() {
+  return <ParsedHtml html={pageHtml} />;
 }

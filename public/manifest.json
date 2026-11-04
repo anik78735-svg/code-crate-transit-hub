@@ -1,0 +1,37 @@
+{
+  "name": "TubePilot \u2014 AI-Powered YouTube Creator OS",
+  "short_name": "TubePilot",
+  "description": "AI-powered YouTube Creator OS by Anik Kumar \u2014 CREATE \u2022 OPTIMIZE \u2022 SCHEDULE \u2022 GROW",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#64135f",
+  "theme_color": "#64135f",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
