@@ -2,6 +2,14 @@ import { Link } from "@tanstack/react-router";
 
 const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.tubepilot.app";
 
+const SOCIALS = [
+  { label: "Instagram", href: "https://www.instagram.com/tubepilot.app" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/tubepilotapp/" },
+  { label: "X (Twitter)", href: "https://x.com/TubePilotApp" },
+  { label: "YouTube", href: "https://youtube.com/@officialtubepilot" },
+  { label: "Facebook", href: "https://www.facebook.com/share/1Emmw34QZi/" },
+];
+
 export function SiteFooter() {
   return (
     <footer className="site-footer">
@@ -29,6 +37,13 @@ export function SiteFooter() {
               Play Store
             </a>
           </p>
+          <div className="footer-social">
+            {SOCIALS.map((s) => (
+              <a key={s.label} href={s.href} rel="noopener">
+                {s.label}
+              </a>
+            ))}
+          </div>
         </div>
         <div className="footer-col">
           <p className="label">Explore</p>

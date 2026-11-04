@@ -19,9 +19,23 @@ TubePilot is an AI-powered YouTube Creator OS that helps creators move from an i
 Official Website: tubepilot.shop | Official App by Anik Kumar
 </p>
 </div><div class="tp-hero-visual">
-<img src="/images/screenshot-3.png" alt="TubePilot creator dashboard app screen"><p class="tp-note" style="margin:14px 4px 0">
-Plan, prepare and manage your YouTube publishing workflow with TubePilot.
-</p>
+<div class="tp-3d-stage" aria-hidden="true">
+<div class="tp-3d-glow"></div>
+<div class="tp-orbit tp-orbit-a"></div>
+<div class="tp-orbit tp-orbit-b"></div>
+<div class="tp-cube-wrap"><div class="tp-cube">
+<div class="tp-cube-face tp-cf-front"><img src="/images/logo.png" alt=""></div>
+<div class="tp-cube-face tp-cf-back"><img src="/images/logo.png" alt=""></div>
+<div class="tp-cube-face tp-cf-right"><img src="/images/icon.png" alt=""></div>
+<div class="tp-cube-face tp-cf-left"><img src="/images/icon.png" alt=""></div>
+<div class="tp-cube-face tp-cf-top"><img src="/images/logo.png" alt=""></div>
+<div class="tp-cube-face tp-cf-bottom"><img src="/images/icon.png" alt=""></div>
+</div></div>
+<span class="tp-float-chip tp-chip-1">✦ AI Ideas</span>
+<span class="tp-float-chip tp-chip-2">◷ Smart Scheduling</span>
+<span class="tp-float-chip tp-chip-3">↗ Analytics</span>
+</div>
+<p class="tp-note">Plan, prepare and manage your YouTube publishing workflow with TubePilot.</p>
 </div></div>
 </section><!-- FEATURES SECTION --><section class="section" id="features">
 <div class="container"><div class="section-head">
