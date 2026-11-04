@@ -13,7 +13,7 @@ export const Route = createFileRoute("/faq")({
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "TubePilot FAQ – AI YouTube Creator Tools" },
     ],
-    links: [{"rel":"canonical","href":"https://www.tubepilot.shop/faq.html"}],
+    links: [{"rel":"canonical","href":"/faq"}],
   }),
   component: FaqPage,
 });
