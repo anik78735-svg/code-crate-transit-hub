@@ -91,6 +91,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "TubePilot",
+          url: "https://www.tubepilot.shop",
+          logo: "https://www.tubepilot.shop/images/logo.png",
+          founder: { "@type": "Person", name: "Anik Kumar" },
+          sameAs: [
+            "https://www.instagram.com/tubepilot.app",
+            "https://www.linkedin.com/company/tubepilotapp/",
+            "https://x.com/TubePilotApp",
+            "https://youtube.com/@officialtubepilot",
+            "https://www.facebook.com/share/1Emmw34QZi/",
+          ],
+        }),
+      },
+    ],
     links: [
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
