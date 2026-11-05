@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { SiteFooter } from "../components/site/site-footer";
 import { SiteHeader } from "../components/site/site-header";
 import { ToTopButton } from "../components/site/to-top-button";
+import { Scene3dEffects } from "../components/site/scene-3d";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -154,6 +155,7 @@ function RootComponent() {
       <SiteHeader />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      <Scene3dEffects />
       <SiteFooter />
       <ToTopButton />
     </QueryClientProvider>
