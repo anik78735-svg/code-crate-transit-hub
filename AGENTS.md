@@ -14,3 +14,4 @@
 - Migrated TubePilot static site (source: uploaded code archive). Page bodies live in `src/content/*.ts` as raw HTML and render through `src/components/site/parsed-html.tsx` (html-react-parser). Do not hand-rewrite migrated page content into JSX.
 - Site CSS is appended to `src/styles.css` with `tp-`-prefixed tokens (`--tp-teal`, `--tp-card`, …) so it never clashes with the shadcn token set.
 - Shared chrome (header, footer, back-to-top) lives in `src/components/site/` and is mounted once in `src/routes/__root.tsx`.
+- Mount global pointer-driven 3D effects in the shared root shell; keep their selector and CSS coverage aligned for cards across migrated pages.
