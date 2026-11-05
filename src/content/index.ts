@@ -81,25 +81,6 @@ Spend less time switching between tasks and more time creating content your audi
 <p>A structured integration layer for compatible AI assistants and agent workflows, subject to client compatibility and implemented tools.</p>
 </article></div>
 </div>
-</section><!-- SCREENSHOTS SECTION --><section class="section section-screenshots">
-<div class="container"><div class="section-head">
-<span class="eyebrow">Inside TubePilot</span>
-<h2>A practical creator workspace</h2>
-<p>Explore selected screens from the TubePilot app.</p>
-</div><div class="screenshots-grid"><div class="screenshot-card">
-<img src="/images/screenshot-1.png" alt="TubePilot app welcome screen" loading="lazy">
-<p class="screenshot-caption">Welcome to TubePilot</p>
-</div><div class="screenshot-card">
-<img src="/images/screenshot-2.png" alt="TubePilot account creation screen" loading="lazy">
-<p class="screenshot-caption">Create your account</p>
-</div><div class="screenshot-card">
-<img src="/images/screenshot-3.png" alt="TubePilot dashboard" loading="lazy">
-<p class="screenshot-caption">Creator dashboard</p>
-</div><div class="screenshot-card">
-<img src="/images/screenshot-4.png" alt="TubePilot upload video screen" loading="lazy">
-<p class="screenshot-caption">Prepare a video upload</p>
-</div></div>
-</div>
 </section><!-- HOW IT WORKS --><section class="section" id="how-it-works">
 <div class="container"><div class="section-head">
 <span class="eyebrow">How it works</span>

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
-const TILT_SELECTOR = ".tp-card";
+const TILT_SELECTOR =
+  ".tp-card, .card, .pricing-card, .testimonial-card, .faq-item, .contact-card, .tp-founder-mark, .tp-hero-visual";
 
 /**
  * Site-wide 3D pointer effects: cards tilt toward the cursor with real
