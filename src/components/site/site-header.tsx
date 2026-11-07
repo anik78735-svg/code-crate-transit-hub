@@ -1,5 +1,5 @@
 import { Link, useRouterState } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const routeLinks = [
   { label: "About", to: "/about" },
@@ -20,6 +20,26 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
 
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", closeOnEscape);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [open]);
+
   return (
     <header className="site-header">
       <div className="container row">
@@ -29,7 +49,12 @@ export function SiteHeader() {
           </span>
           TubePilot
         </Link>
-        <nav className={"nav-links" + (open ? " open" : "")} id="nav-links">
+        <nav
+          className={"nav-links" + (open ? " open" : "")}
+          id="nav-links"
+          aria-label="Main navigation"
+          aria-hidden={!open && typeof window !== "undefined" && window.innerWidth <= 900}
+        >
           {hashLinks.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
               {l.label}
@@ -49,9 +74,17 @@ export function SiteHeader() {
             Contact
           </Link>
         </nav>
+        {open && (
+          <button
+            className="nav-backdrop"
+            type="button"
+            aria-label="Close navigation menu"
+            onClick={() => setOpen(false)}
+          />
+        )}
         <button
           className="nav-toggle"
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           aria-controls="nav-links"
           onClick={() => setOpen((v) => !v)}
