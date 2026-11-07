@@ -25,6 +25,15 @@ export function SiteHeader() {
   }, [pathname]);
 
   useEffect(() => {
+    const desktopQuery = window.matchMedia("(min-width: 901px)");
+    const closeOnDesktop = (event: MediaQueryListEvent) => {
+      if (event.matches) setOpen(false);
+    };
+    desktopQuery.addEventListener("change", closeOnDesktop);
+    return () => desktopQuery.removeEventListener("change", closeOnDesktop);
+  }, []);
+
+  useEffect(() => {
     if (!open) return;
 
     const closeOnEscape = (event: KeyboardEvent) => {
@@ -53,7 +62,6 @@ export function SiteHeader() {
           className={"nav-links" + (open ? " open" : "")}
           id="nav-links"
           aria-label="Main navigation"
-          aria-hidden={!open && typeof window !== "undefined" && window.innerWidth <= 900}
         >
           {hashLinks.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
