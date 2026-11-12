@@ -1296,13 +1296,10 @@ a,button { -webkit-tap-highlight-color:transparent; }
   .nav-links {
     position: fixed;
     z-index: 2;
-    inset: 72px 0 0;
+    inset: 72px 16px 16px auto;
     display: none;
     box-sizing: border-box;
-    height: calc(100vh - 72px);
-    height: calc(100dvh - 72px);
-    max-height: calc(100vh - 72px);
-    max-height: calc(100dvh - 72px);
+    width: min(420px, calc(100vw - 32px));
     flex-direction: column;
     align-items: stretch;
     gap: 0;
