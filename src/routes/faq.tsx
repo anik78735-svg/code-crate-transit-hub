@@ -15,7 +15,7 @@ export const Route = createFileRoute("/faq")({
       { name: "twitter:title", content: "TubePilot FAQ – AI YouTube Creator Tools" },
       { name: "twitter:description", content: "Answers about TubePilot's AI tools, YouTube publishing workflow, scheduling, analytics and support." },
     ],
-    links: [{"rel":"canonical","href":"/faq"}],
+    links: [{"rel":"canonical","href":"https://code-crate-transit-hub.lovable.app/faq"}],
   }),
   component: FaqPage,
 });
