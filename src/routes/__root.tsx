@@ -180,7 +180,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             },
             {
               "@type": "Question",
-              name: "What are useful AI tools for YouTube creators?",
+              name: "What are the best AI tools for YouTube creators?",
               acceptedAnswer: { "@type": "Answer", text: "Useful tools include topic planners, title and description assistants, hashtag and metadata helpers, YouTube SEO checklists, thumbnail planning tools, scheduling workflows and analytics." },
             },
           ],
