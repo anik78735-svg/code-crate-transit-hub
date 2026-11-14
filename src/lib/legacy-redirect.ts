@@ -14,7 +14,7 @@ export function redirectCanonicalRequest(request: Request): Response | null {
   const hostname = url.hostname.toLowerCase();
   const isLegacyHost = LEGACY_HOSTS.has(hostname);
   const isPrimaryHttp = hostname === PRIMARY_HOST && url.protocol !== "https:";
-  const hasLegacyHtmlPath = /\\.html$/i.test(url.pathname);
+  const hasLegacyHtmlPath = /\.html$/i.test(url.pathname);
 
   if (!isLegacyHost && !isPrimaryHttp && !hasLegacyHtmlPath) {
     return null;
@@ -26,7 +26,7 @@ export function redirectCanonicalRequest(request: Request): Response | null {
   }
 
   if (hasLegacyHtmlPath) {
-    const cleanPath = url.pathname.replace(/\\.html$/i, "");
+    const cleanPath = url.pathname.replace(/\.html$/i, "");
     url.pathname = cleanPath === "/index" || cleanPath === "" ? "/" : cleanPath;
   }
 
