@@ -13,4 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://code-crate-transit-hub.lovable.app/sitemap.xml
+Sitemap: https://tubepilot.app/sitemap.xml
