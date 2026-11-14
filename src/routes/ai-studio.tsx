@@ -57,7 +57,7 @@ function AiStudioPage() {
     try {
       await navigator.clipboard.writeText(value);
       setCopied(label);
-      window.setTimeout(() => setCopied(""));
+      window.setTimeout(() => setCopied(""), 1800);
     } catch {
       setCopied("");
     }
