@@ -7,7 +7,7 @@ export const Route = createFileRoute("/blog")({
   head: () => ({
     meta: [
       { title: "TubePilot Blog | YouTube Creator Guides & Tips" },
-      { name: "description", content: "Explore TubePilot's practical guides for YouTube creators. Learn about video planning, titles, descriptions, metadata optimization and consistent publishing workflows." },
+      { name: "description", content: "Explore TubePilot guides for YouTube creators, with practical tips for video planning, SEO, titles and publishing workflows.'s practical guides for YouTube creators. Learn about video planning, titles, descriptions, metadata optimization and consistent publishing workflows." },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TubePilot" },
