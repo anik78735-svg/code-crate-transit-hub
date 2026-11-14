@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { createFileRoute } from "@tanstack/react-router";
+import { Link, createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Check, Copy, Download, Hash, Sparkles, WandSparkles } from "lucide-react";
 
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.tubepilot.app";
@@ -75,6 +75,8 @@ function AiStudioPage() {
           </h1>
           <p className="mt-4 text-base leading-7 text-[#695b6d]">
             Add your YouTube topic and get title ideas, a ready-to-edit description, and relevant hashtags.
+            This free tool is part of the <Link to="/" className="font-semibold text-[#74146f] underline underline-offset-4">TubePilot AI YouTube Creator OS by Bharat Cloud Technologies</Link>.
+            Explore our <Link to="/features" className="font-semibold text-[#74146f] underline underline-offset-4">YouTube Growth Tools</Link> for the wider creator workflow.
           </p>
         </div>
 
