@@ -5,7 +5,8 @@ const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.tubepilot.
 
 const SOCIALS = [
   { label: "Instagram", href: "https://www.instagram.com/tubepilot.app", Icon: Instagram },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/tubepilotapp/", Icon: Linkedin },
+  { label: "Founder LinkedIn", href: "https://www.linkedin.com/in/bharatcloudtechnologies", Icon: Linkedin },
+  { label: "Company LinkedIn", href: "https://www.linkedin.com/company/tubepilotapp/", Icon: Linkedin },
   { label: "X (Twitter)", href: "https://x.com/TubePilotApp", Icon: Twitter },
   { label: "YouTube", href: "https://youtube.com/@officialtubepilot", Icon: Youtube },
   { label: "Facebook", href: "https://www.facebook.com/share/1Emmw34QZi/", Icon: Facebook },
@@ -51,6 +52,7 @@ export function SiteFooter() {
           <p className="label">Explore</p>
           <Link to="/about">About TubePilot</Link>
           <Link to="/founder">Founder</Link>
+          <Link to="/ai-studio">AI Studio</Link>
           <Link to="/faq">Frequently Asked Questions</Link>
           <Link to="/features">Features</Link>
           <Link to="/mcp">MCP</Link>
