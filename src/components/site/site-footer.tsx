@@ -76,7 +76,7 @@ export function SiteFooter() {
         <span>
           Made in India · Official:{" "}
           <a href="https://www.tubepilot.shop" target="_blank" rel="noopener noreferrer">www.tubepilot.shop</a> ·{" "}
-          <a href="mailto:support@tubepilot.shop">support@tubepilot.app</a>
+          <a href="mailto:support@tubepilot.shop">support@tubepilot.shop</a>
         </span>
       </div>
     </footer>
