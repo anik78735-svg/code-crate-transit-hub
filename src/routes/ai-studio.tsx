@@ -174,7 +174,7 @@ export const Route = createFileRoute("/ai-studio")({
       { property: "og:url", content: "https://www.tubepilot.shop/ai-studio" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://tubepilot.app/ai-studio" }],
+    links: [{ rel: "canonical", href: "https://www.tubepilot.shop/ai-studio" }],
   }),
   component: AiStudioPage,
 });
