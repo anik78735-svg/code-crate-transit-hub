@@ -90,7 +90,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "TubePilot is your AI YouTube Creator OS to CREATE videos, OPTIMIZE titles and descriptions, SCHEDULE publishing, and GROW your channel with AI tools and the TubePilot Model Context Protocol (MCP) layer.",
+          "TubePilot is the AI YouTube Creator OS for planning videos, optimizing titles and descriptions, scheduling uploads, and growing your channel.",
       },
       { name: "theme-color", content: "#64135f" },
       { property: "og:type", content: "website" },
