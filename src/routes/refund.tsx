@@ -7,7 +7,7 @@ export const Route = createFileRoute("/refund")({
   head: () => ({
     meta: [
       { title: "Refund Policy — TubePilot" },
-      { name: "description", content: "Read TubePilot's refund policy for free uploads, cancelled uploads, diamond purchases, failed uploads and refund requests." },
+      { name: "description", content: "Review TubePilot's refund policy for Diamond purchases, video uploads, failed transactions and refund requests." },
       { name: "robots", content: "index, follow" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TubePilot" },
