@@ -7,7 +7,7 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About TubePilot | Founded by Anik Kumar | AI-Powered YouTube Creator OS" },
-      { name: "description", content: "TubePilot is founded by Anik Kumar. An AI-powered YouTube Creator OS built by Bharat Cloud Technologies to help creators ideate, optimize, schedule and grow." },
+      { name: "description", content: "Meet TubePilot, the AI YouTube Creator OS built by Bharat Cloud Technologies to help creators plan, optimize and schedule videos." },
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TubePilot" },
