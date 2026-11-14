@@ -53,7 +53,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <div className="container row">
-        <Link className="brand" to="/">
+        <Link className="brand" to="/" onClick={() => setOpen(false)}>
           <span className="mark">
             <img src="/images/logo.png" alt="TubePilot logo" />
           </span>
@@ -63,9 +63,11 @@ export function SiteHeader() {
           className={"nav-links" + (open ? " open" : "")}
           id="nav-links"
           aria-label="Main navigation"
+          aria-hidden={!open && typeof window !== "undefined" && window.matchMedia("(max-width: 900px)").matches}
+          onClick={() => setOpen(false)}
         >
           {hashLinks.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
+            <a key={l.href} href={l.href}>
               {l.label}
             </a>
           ))}
@@ -74,12 +76,11 @@ export function SiteHeader() {
               key={l.to}
               to={l.to}
               aria-current={pathname === l.to ? "page" : undefined}
-              onClick={() => setOpen(false)}
             >
               {l.label}
             </Link>
           ))}
-          <Link className="nav-cta" to="/contact" onClick={() => setOpen(false)}>
+          <Link className="nav-cta" to="/contact">
             Contact
           </Link>
         </nav>
@@ -93,6 +94,7 @@ export function SiteHeader() {
         )}
         <button
           className="nav-toggle"
+          type="button"
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           aria-controls="nav-links"
