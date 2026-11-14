@@ -97,10 +97,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "TubePilot" },
       { property: "og:title", content: "TubePilot - AI YouTube Creator OS" },
       { property: "og:description", content: "CREATE, OPTIMIZE, SCHEDULE and GROW with TubePilot AI tools and our Model Context Protocol (MCP) layer." },
-      { property: "og:url", content: "https://www.tubepilot.shop/" },
       { property: "og:image", content: "https://www.tubepilot.shop/images/logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:url", content: "https://www.tubepilot.shop/" },
       { name: "twitter:title", content: "TubePilot - AI YouTube Creator OS" },
       { name: "twitter:description", content: "CREATE, OPTIMIZE, SCHEDULE and GROW with TubePilot AI tools and our MCP layer." },
       { name: "twitter:image", content: "https://www.tubepilot.shop/images/logo.png" },
@@ -190,7 +188,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
     links: [
-      { rel: "canonical", href: "https://www.tubepilot.shop/" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
