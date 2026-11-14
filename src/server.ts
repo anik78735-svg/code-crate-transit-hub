@@ -2,7 +2,7 @@ import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
-import { redirectLegacyHtmlRequest } from "./lib/legacy-redirect";
+import { redirectCanonicalRequest } from "./lib/legacy-redirect";
 
 type ServerEntry = {
   fetch: (request: Request, env: unknown, ctx: unknown) => Promise<Response> | Response;
@@ -47,8 +47,8 @@ function isH3SwallowedErrorBody(body: string): boolean {
 
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
-    const legacyRedirect = redirectLegacyHtmlRequest(request);
-    if (legacyRedirect) return legacyRedirect;
+    const canonicalRedirect = redirectCanonicalRequest(request);
+    if (canonicalRedirect) return canonicalRedirect;
 
     try {
       const handler = await getServerEntry();
