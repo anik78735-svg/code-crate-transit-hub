@@ -14,6 +14,7 @@ export const Route = createFileRoute("/privacy")({
       { property: "og:title", content: "Privacy Policy | TubePilot — Data Collection & Protection" },
       { property: "og:description", content: "Learn how TubePilot handles account information, video content, YouTube API data and privacy choices." },
       { property: "og:url", content: "https://www.tubepilot.shop/privacy" },
+      { property: "og:url", content: "https://www.tubepilot.shop/privacy" },
       { name: "twitter:url", content: "https://www.tubepilot.shop/privacy" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "TubePilot Privacy Policy" },
