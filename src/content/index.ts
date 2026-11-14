@@ -32,12 +32,12 @@ TubePilot is an AI-powered YouTube Creator OS that helps creators move from an i
 <div class="tp-orbit tp-orbit-a"></div>
 <div class="tp-orbit tp-orbit-b"></div>
 <div class="tp-cube-wrap"><div class="tp-cube">
-<div class="tp-cube-face tp-cf-front"><img src="/images/logo.png" alt=""></div>
-<div class="tp-cube-face tp-cf-back"><img src="/images/logo.png" alt=""></div>
-<div class="tp-cube-face tp-cf-right"><img src="/images/icon.png" alt=""></div>
-<div class="tp-cube-face tp-cf-left"><img src="/images/icon.png" alt=""></div>
-<div class="tp-cube-face tp-cf-top"><img src="/images/logo.png" alt=""></div>
-<div class="tp-cube-face tp-cf-bottom"><img src="/images/icon.png" alt=""></div>
+<div class="tp-cube-face tp-cf-front"><img src="/images/logo.png" alt="" width="512" height="512" decoding="async"></div>
+<div class="tp-cube-face tp-cf-back"><img src="/images/logo.png" alt="" width="512" height="512" decoding="async"></div>
+<div class="tp-cube-face tp-cf-right"><img src="/images/icon.png" alt="" width="512" height="512" decoding="async"></div>
+<div class="tp-cube-face tp-cf-left"><img src="/images/icon.png" alt="" width="512" height="512" decoding="async"></div>
+<div class="tp-cube-face tp-cf-top"><img src="/images/logo.png" alt="" width="512" height="512" decoding="async"></div>
+<div class="tp-cube-face tp-cf-bottom"><img src="/images/icon.png" alt="" width="512" height="512" decoding="async"></div>
 </div></div>
 <span class="tp-float-chip tp-chip-1">✦ AI Ideas</span>
 <span class="tp-float-chip tp-chip-2">◷ Smart Scheduling</span>
@@ -126,7 +126,7 @@ Package prices and feature entitlements may change. The app's live Diamond Store
 </div></div>
 </section><!-- FOUNDER SECTION --><section class="section">
 <div class="container tp-founder"><div class="tp-founder-mark">
-<img src="/images/logo.png" alt="TubePilot logo">
+<img src="/images/logo.png" alt="TubePilot logo" width="512" height="512" loading="lazy" decoding="async">
 </div><div>
 <span class="eyebrow">The people behind the product</span><h2>Built with a creator-first vision</h2><p>
 TubePilot is being developed to bring the essential YouTube creator workflow into one connected platform. Learn about the product and its founder Anik Kumar.
