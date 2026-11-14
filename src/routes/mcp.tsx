@@ -14,7 +14,6 @@ export const Route = createFileRoute("/mcp")({
       { property: "og:title", content: "TubePilot MCP | Model Context Protocol for YouTube Creator Workflows" },
       { property: "og:description", content: "Learn how TubePilot MCP is designed to connect compatible AI assistants and agents with supported YouTube creator workflows." },
       { property: "og:url", content: "https://www.tubepilot.shop/mcp" },
-      { property: "og:url", content: "https://www.tubepilot.shop/mcp" },
       { name: "twitter:url", content: "https://www.tubepilot.shop/mcp" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:title", content: "TubePilot MCP" },
