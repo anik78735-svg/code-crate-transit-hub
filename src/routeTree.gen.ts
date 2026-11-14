@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AiStudioRouteImport } from './routes/ai-studio'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as BlogRouteImport } from './routes/blog'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -26,6 +27,11 @@ import { Route as TermsRouteImport } from './routes/terms'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiStudioRoute = AiStudioRouteImport.update({
+  id: '/ai-studio',
+  path: '/ai-studio',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -91,6 +97,7 @@ const TermsRoute = TermsRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/ai-studio': typeof AiStudioRoute
   '/about': typeof AboutRoute
   '/blog': typeof BlogRoute
   '/contact': typeof ContactRoute
@@ -139,6 +146,7 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/ai-studio'
     | '/about'
     | '/blog'
     | '/contact'
@@ -185,6 +193,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AiStudioRoute: typeof AiStudioRoute
   AboutRoute: typeof AboutRoute
   BlogRoute: typeof BlogRoute
   ContactRoute: typeof ContactRoute
@@ -206,6 +215,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-studio': {
+      id: '/ai-studio'
+      path: '/ai-studio'
+      fullPath: '/ai-studio'
+      preLoaderRoute: typeof AiStudioRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -297,6 +313,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AiStudioRoute: AiStudioRoute,
   AboutRoute: AboutRoute,
   BlogRoute: BlogRoute,
   ContactRoute: ContactRoute,
