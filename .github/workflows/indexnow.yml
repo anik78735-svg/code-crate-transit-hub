@@ -1,0 +1,27 @@
+name: Submit changed URLs to IndexNow
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "Optional changed URLs, one per line. Leave blank to submit all sitemap URLs."
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Submit URLs to IndexNow
+        env:
+          INDEXNOW_URLS: ${{ inputs.urls }}
+        run: npm run indexnow
