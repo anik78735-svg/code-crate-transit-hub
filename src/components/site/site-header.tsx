@@ -63,7 +63,6 @@ export function SiteHeader() {
           className={"nav-links" + (open ? " open" : "")}
           id="nav-links"
           aria-label="Main navigation"
-          aria-hidden={!open && typeof window !== "undefined" && window.matchMedia("(max-width: 900px)").matches}
           onClick={() => setOpen(false)}
         >
           {hashLinks.map((l) => (
