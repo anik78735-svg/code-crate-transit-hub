@@ -14,7 +14,6 @@ import appCss from "../styles.css?url";
 import { SiteFooter } from "../components/site/site-footer";
 import { SiteHeader } from "../components/site/site-header";
 import { ToTopButton } from "../components/site/to-top-button";
-import { Scene3dEffects } from "../components/site/scene-3d";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 
 function NotFoundComponent() {
@@ -189,12 +188,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap",
-      },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "icon", type: "image/png", sizes: "32x32", href: "/favicon-32x32.png" },
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
@@ -227,10 +220,12 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <a className="skip-link" href="#main-content">Skip to content</a>
       <SiteHeader />
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
-      <Scene3dEffects />
+      {/* Keep one semantic main landmark around the active route content. */}
+      <main id="main-content" tabIndex={-1}>
+        <Outlet />
+      </main>
       <SiteFooter />
       <ToTopButton />
     </QueryClientProvider>
