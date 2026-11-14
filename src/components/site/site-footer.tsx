@@ -1,13 +1,14 @@
 import { Link } from "@tanstack/react-router";
+import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 
 const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.tubepilot.app";
 
 const SOCIALS = [
-  { label: "Instagram", href: "https://www.instagram.com/tubepilot.app" },
-  { label: "LinkedIn", href: "https://www.linkedin.com/company/tubepilotapp/" },
-  { label: "X (Twitter)", href: "https://x.com/TubePilotApp" },
-  { label: "YouTube", href: "https://youtube.com/@officialtubepilot" },
-  { label: "Facebook", href: "https://www.facebook.com/share/1Emmw34QZi/" },
+  { label: "Instagram", href: "https://www.instagram.com/tubepilot.app", Icon: Instagram },
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/tubepilotapp/", Icon: Linkedin },
+  { label: "X (Twitter)", href: "https://x.com/TubePilotApp", Icon: Twitter },
+  { label: "YouTube", href: "https://youtube.com/@officialtubepilot", Icon: Youtube },
+  { label: "Facebook", href: "https://www.facebook.com/share/1Emmw34QZi/", Icon: Facebook },
 ];
 
 export function SiteFooter() {
@@ -38,9 +39,10 @@ export function SiteFooter() {
             </a>
           </p>
           <div className="footer-social">
-            {SOCIALS.map((s) => (
-              <a key={s.label} href={s.href} rel="noopener">
-                {s.label}
+            {SOCIALS.map(({ label, href, Icon }) => (
+              <a key={label} href={href} aria-label={label} title={label} target="_blank" rel="noopener noreferrer">
+                <Icon size={18} aria-hidden="true" />
+                <span className="sr-only">{label}</span>
               </a>
             ))}
           </div>
