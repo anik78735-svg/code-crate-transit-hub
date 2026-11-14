@@ -3,7 +3,7 @@ import { createRouter, rootRouteId } from "@tanstack/react-router";
 import { describe, expect, it } from "vitest";
 
 import { routeTree } from "@/routeTree.gen";
-import { redirectLegacyHtmlRequest } from "@/lib/legacy-redirect";
+import { redirectCanonicalRequest } from "@/lib/legacy-redirect";
 
 // Match routes without running loaders or rendering: loaders may need a server or
 // network the test run lacks, and jsdom never loads the stylesheets React waits on.
@@ -34,31 +34,31 @@ describe("App routing", () => {
 });
 
 
-describe("Legacy .html redirects", () => {
+describe("Canonical domain and legacy URL redirects", () => {
   it.each([
-    ["/faq.html", "/faq"],
-    ["/blog.html", "/blog"],
-    ["/features.html", "/features"],
-    ["/mcp.html", "/mcp"],
-    ["/contact.html", "/contact"],
-    ["/privacy.html", "/privacy"],
-    ["/terms.html", "/terms"],
-    ["/delete-account.html", "/delete-account"],
-    ["/index.html", "/"],
-  ])("permanently redirects %s to %s", (legacyPath, cleanPath) => {
-    const response = redirectLegacyHtmlRequest(
-      new Request(`https://www.tubepilot.shop${legacyPath}?utm_source=legacy`),
-    );
+    ["https://tubepilot.shop/faq", "https://www.tubepilot.shop/faq"],
+    ["http://tubepilot.shop/ai-studio", "https://www.tubepilot.shop/ai-studio"],
+    ["https://tubepilot.app/", "https://www.tubepilot.shop/"],
+    ["https://www.tubepilot.app/features", "https://www.tubepilot.shop/features"],
+    ["http://www.tubepilot.shop/faq", "https://www.tubepilot.shop/faq"],
+    ["https://tubepilot.app/faq.html?utm_source=legacy", "https://www.tubepilot.shop/faq?utm_source=legacy"],
+    ["https://www.tubepilot.shop/index.html?utm_source=legacy", "https://www.tubepilot.shop/?utm_source=legacy"],
+  ])("permanently redirects %s to %s", (requestUrl, destination) => {
+    const response = redirectCanonicalRequest(new Request(requestUrl));
 
     expect(response?.status).toBe(308);
-    expect(response?.headers.get("location")).toBe(
-      `https://www.tubepilot.shop${cleanPath}?utm_source=legacy`,
-    );
+    expect(response?.headers.get("location")).toBe(destination);
   });
 
-  it("does not redirect clean routes", () => {
+  it("does not redirect clean HTTPS routes on the primary domain", () => {
     expect(
-      redirectLegacyHtmlRequest(new Request("https://www.tubepilot.shop/faq")),
+      redirectCanonicalRequest(new Request("https://www.tubepilot.shop/faq")),
+    ).toBeNull();
+  });
+
+  it("does not redirect local development hosts", () => {
+    expect(
+      redirectCanonicalRequest(new Request("http://localhost:3000/faq")),
     ).toBeNull();
   });
 });
