@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 const routeLinks = [
   { label: "About", to: "/about" },
   { label: "Founder", to: "/founder" },
+  { label: "AI Studio", to: "/ai-studio" },
   { label: "MCP", to: "/mcp" },
   { label: "Docs", to: "/docs" },
   { label: "Blog", to: "/blog" },
