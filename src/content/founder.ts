@@ -10,9 +10,7 @@ src="/images/founder.png"
 alt="Anik Kumar, Founder of TubePilot"
 class="founder-photo"
 width="190"
-height="190"
-
-«»
+height="190" />
 
 <h2>Anik Kumar</h2><p class="founder-role">Founder of TubePilot</p></div><p>
 <strong>Anik Kumar is the founder of TubePilot.</strong>
