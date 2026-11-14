@@ -7,7 +7,7 @@ export const Route = createFileRoute("/features")({
   head: () => ({
     meta: [
       { title: "TubePilot Features | AI YouTube Creator Tools" },
-      { name: "description", content: "Explore TubePilot features for YouTube creators, including AI video ideas, title and description generation, YouTube SEO, hashtags, video upload, scheduling, analytics and channel audit." },
+      { name: "description", content: "Explore TubePilot tools for YouTube ideas, titles, descriptions, SEO, hashtags, uploads, scheduling and channel analytics." },
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TubePilot" },
