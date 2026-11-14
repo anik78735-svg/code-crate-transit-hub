@@ -8,7 +8,7 @@ Build better videos.<br>
 </h1><p class="lead">
 TubePilot is an AI-powered YouTube Creator OS that helps creators move from an idea to an optimized, scheduled and published video — then understand performance.
 </p><div class="hero-cta">
-<a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.tubepilot.app" target="_blank">Download App</a>
+<a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.tubepilot.app" target="_blank" rel="noopener noreferrer">Download on Google Play</a>
 <a class="btn btn-outline btn-lg" href="#features">Explore features</a>
 </div><div class="tp-pills">
 <span>CREATE</span>
