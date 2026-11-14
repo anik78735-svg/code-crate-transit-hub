@@ -22,6 +22,7 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:url", content: "https://www.tubepilot.shop/" },
       { property: "og:image", content: "https://www.tubepilot.shop/images/logo.png" },
+      { name: "twitter:url", content: "https://www.tubepilot.shop/" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "TubePilot - AI YouTube Creator OS" },
       { name: "twitter:description", content: "Build better videos. Grow with intention. Your YouTube creator workflow, in one place." },
