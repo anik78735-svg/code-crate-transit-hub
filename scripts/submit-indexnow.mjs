@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { basename, resolve } from "node:path";
 
 const HOST = "www.tubepilot.shop";
 const KEY_FILE = resolve("public/a3becd9983474dd4996ced58c3720df5.txt");
@@ -22,18 +22,23 @@ function validateUrl(value) {
 
 async function getUrls() {
   const requested = (process.env.INDEXNOW_URLS ?? "")
-    .split(/[\\r\\n,]+/).map((value) => value.trim()).filter(Boolean);
+    .replaceAll(String.fromCharCode(13), "")
+    .split(String.fromCharCode(10))
+    .flatMap((line) => line.split(","))
+    .map((value) => value.trim())
+    .filter(Boolean);
   if (requested.length) return [...new Set(requested.map(validateUrl))];
 
   const sitemap = await readFile(SITEMAP_FILE, "utf8");
-  const urls = [...sitemap.matchAll(/<loc>([\\s\\S]*?)<\\/loc>/gi)]
-    .map((match) => decodeXml(match[1].trim())).map(validateUrl);
+  const urls = [...sitemap.matchAll(new RegExp("<loc>(.*?)</loc>", "g"))]
+    .map((match) => decodeXml(match[1].trim()))
+    .map(validateUrl);
   return [...new Set(urls)];
 }
 
 async function main() {
   const key = (await readFile(KEY_FILE, "utf8")).trim();
-  if (!/^[A-Za-z0-9-]{8,128}$/.test(key) || !KEY_FILE.endsWith(`/${key}.txt`)) {
+  if (!/^[A-Za-z0-9-]{8,128}$/.test(key) || basename(KEY_FILE) !== `${key}.txt`) {
     throw new Error("IndexNow key file name/content is invalid.");
   }
   const urlList = await getUrls();
