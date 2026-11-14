@@ -13,4 +13,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://tubepilot.app/sitemap.xml
+Sitemap: https://www.tubepilot.shop/sitemap.xml
