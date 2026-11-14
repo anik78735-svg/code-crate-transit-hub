@@ -174,6 +174,7 @@ export const Route = createFileRoute("/ai-studio")({
       { property: "og:title", content: "AI Studio | TubePilot" },
       { property: "og:description", content: "Turn your YouTube video idea into a creator-ready pack with TubePilot AI Studio." },
       { property: "og:url", content: "https://www.tubepilot.shop/ai-studio" },
+      { name: "twitter:url", content: "https://www.tubepilot.shop/ai-studio" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [{ rel: "canonical", href: "https://www.tubepilot.shop/ai-studio" }],
