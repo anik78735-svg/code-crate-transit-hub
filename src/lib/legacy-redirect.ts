@@ -1,9 +1,5 @@
 const PRIMARY_HOST = "www.tubepilot.shop";
-const LEGACY_HOSTS = new Set([
-  "tubepilot.shop",
-  "tubepilot.app",
-  "www.tubepilot.app",
-]);
+const LEGACY_HOSTS = new Set(["tubepilot.shop"]);
 
 /**
  * Canonicalize legacy domains, HTTP requests, and migrated .html URLs before
