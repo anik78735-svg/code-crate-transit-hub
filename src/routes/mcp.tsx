@@ -7,7 +7,7 @@ export const Route = createFileRoute("/mcp")({
   head: () => ({
     meta: [
       { title: "TubePilot MCP | Model Context Protocol for YouTube Creator Workflows" },
-      { name: "description", content: "Explore TubePilot MCP (Model Context Protocol), its purpose, supported AI-agent workflows, compatibility requirements, authentication and permission considerations." },
+      { name: "description", content: "Discover TubePilot MCP, a Model Context Protocol layer for compatible AI assistants and supported YouTube creator workflows." },
       { name: "robots", content: "index, follow, max-image-preview:large" },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "TubePilot" },
