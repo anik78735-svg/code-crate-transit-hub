@@ -38,10 +38,7 @@ describe("Canonical domain and legacy URL redirects", () => {
   it.each([
     ["https://tubepilot.shop/faq", "https://www.tubepilot.shop/faq"],
     ["http://tubepilot.shop/ai-studio", "https://www.tubepilot.shop/ai-studio"],
-    ["https://tubepilot.app/", "https://www.tubepilot.shop/"],
-    ["https://www.tubepilot.app/features", "https://www.tubepilot.shop/features"],
     ["http://www.tubepilot.shop/faq", "https://www.tubepilot.shop/faq"],
-    ["https://tubepilot.app/faq.html?utm_source=legacy", "https://www.tubepilot.shop/faq?utm_source=legacy"],
     ["https://www.tubepilot.shop/index.html?utm_source=legacy", "https://www.tubepilot.shop/?utm_source=legacy"],
   ])("permanently redirects %s to %s", (requestUrl, destination) => {
     const response = redirectCanonicalRequest(new Request(requestUrl));
@@ -59,6 +56,12 @@ describe("Canonical domain and legacy URL redirects", () => {
   it("does not redirect local development hosts", () => {
     expect(
       redirectCanonicalRequest(new Request("http://localhost:3000/faq")),
+    ).toBeNull();
+  });
+
+  it("does not redirect domains that are not verified TubePilot aliases", () => {
+    expect(
+      redirectCanonicalRequest(new Request("https://tubepilot.app/")),
     ).toBeNull();
   });
 });
