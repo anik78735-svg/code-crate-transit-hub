@@ -71,7 +71,8 @@ export function SiteFooter() {
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} TubePilot by Anik Kumar. All rights reserved.</span>
         <span>
-          Made in India · Official: tubepilot.app ·{" "}
+          Made in India · Official:{" "}
+          <a href="https://www.tubepilot.shop" target="_blank" rel="noopener noreferrer">www.tubepilot.shop</a> ·{" "}
           <a href="mailto:support@tubepilot.app">support@tubepilot.app</a>
         </span>
       </div>
