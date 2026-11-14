@@ -33,10 +33,12 @@ export function SiteFooter() {
             TubePilot
           </Link>
           <p>
-            AI-powered tools for the YouTube creator workflow. Create, optimize, schedule and
-            grow. Official App:{" "}
+            <Link to="/">AI YouTube Creator OS by Bharat Cloud Technologies</Link> for planning,
+            optimizing and publishing videos. Explore our{" "}
+            <Link to="/features">YouTube Growth Tools</Link> and{" "}
+            <Link to="/ai-studio">AI YouTube Title &amp; Description Generator</Link>. Official app:{" "}
             <a href={PLAY_STORE} rel="noopener">
-              Play Store
+              Google Play
             </a>
           </p>
           <div className="footer-social">
@@ -50,11 +52,12 @@ export function SiteFooter() {
         </div>
         <div className="footer-col">
           <p className="label">Explore</p>
+          <Link to="/">TubePilot AI YouTube Creator OS</Link>
           <Link to="/about">About TubePilot</Link>
           <Link to="/founder">Founder</Link>
-          <Link to="/ai-studio">AI Studio</Link>
+          <Link to="/ai-studio">AI YouTube Title &amp; Description Generator</Link>
           <Link to="/faq">Frequently Asked Questions</Link>
-          <Link to="/features">Features</Link>
+          <Link to="/features">YouTube Growth Tools</Link>
           <Link to="/mcp">MCP</Link>
           <Link to="/docs">Documentation</Link>
           <Link to="/blog">Blog</Link>
@@ -73,7 +76,7 @@ export function SiteFooter() {
         <span>
           Made in India · Official:{" "}
           <a href="https://www.tubepilot.shop" target="_blank" rel="noopener noreferrer">www.tubepilot.shop</a> ·{" "}
-          <a href="mailto:support@tubepilot.app">support@tubepilot.app</a>
+          <a href="mailto:support@tubepilot.shop">support@tubepilot.app</a>
         </span>
       </div>
     </footer>
