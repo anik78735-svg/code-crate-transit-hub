@@ -1324,3 +1324,97 @@ a,button { -webkit-tap-highlight-color:transparent; }
     touch-action: manipulation;
   }
 }
+
+
+/* Mobile navigation drawer: keep the header, overlay, drawer and toggle in
+   one predictable stacking context. Absolute children avoid fixed-position
+   containing-block surprises caused by the sticky header's backdrop filter. */
+.site-header {
+  z-index: 100;
+  isolation: isolate;
+}
+
+@media (max-width: 900px) {
+  .site-header .nav-links {
+    position: absolute;
+    z-index: 102;
+    top: 72px;
+    right: 16px;
+    bottom: auto;
+    left: auto;
+    display: flex;
+    width: min(420px, calc(100vw - 32px));
+    max-height: calc(100vh - 88px);
+    max-height: calc(100dvh - 88px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    border: 1px solid var(--tp-border);
+    border-radius: 18px;
+    box-shadow: 0 18px 48px rgba(36, 21, 38, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transform-origin: top right;
+    transition: opacity 180ms ease, transform 180ms ease, visibility 180ms;
+  }
+
+  .site-header .nav-links.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .site-header .nav-links a {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--tp-border);
+  }
+
+  .site-header .nav-links .nav-cta {
+    justify-content: center;
+    margin-top: 12px;
+    border-bottom: 0;
+  }
+
+  .site-header .nav-toggle {
+    position: relative;
+    z-index: 103;
+    display: grid;
+    flex: 0 0 40px;
+    touch-action: manipulation;
+  }
+
+  .site-header .nav-backdrop {
+    position: absolute;
+    z-index: 101;
+    top: 72px;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 72px);
+    height: calc(100dvh - 72px);
+    border: 0;
+    padding: 0;
+    background: rgba(36, 21, 38, 0.28);
+    touch-action: manipulation;
+    cursor: default;
+  }
+}
+
+@media (min-width: 901px) {
+  .site-header .nav-backdrop {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header .nav-links {
+    transition: none;
+  }
+}
