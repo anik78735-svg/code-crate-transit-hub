@@ -100,6 +100,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:url", content: "https://www.tubepilot.shop/" },
       { property: "og:image", content: "https://www.tubepilot.shop/images/logo.png" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:url", content: "https://www.tubepilot.shop/" },
       { name: "twitter:title", content: "TubePilot - AI YouTube Creator OS" },
       { name: "twitter:description", content: "CREATE, OPTIMIZE, SCHEDULE and GROW with TubePilot AI tools and our MCP layer." },
       { name: "twitter:image", content: "https://www.tubepilot.shop/images/logo.png" },
