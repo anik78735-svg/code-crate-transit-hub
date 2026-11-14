@@ -16,7 +16,7 @@ TubePilot is an AI-powered YouTube Creator OS that helps creators move from an i
 <span>SCHEDULE</span>
 <span>GROW</span>
 </div>
-<p class="hero-feature-summary"><strong>Creator tools:</strong> AI ideas & planning · Titles & descriptions · YouTube SEO · Smart scheduling · Analytics</p><p class="hero-note">Founded by <a href="/founder">Anik Kumar</a> · Bharat Cloud Technologies · Official website: tubepilot.app</p>
+<p class="hero-feature-summary"><strong>Creator tools:</strong> AI ideas & planning · Titles & descriptions · YouTube SEO · Smart scheduling · Analytics</p><p class="hero-note">Founded by <a href="/founder">Anik Kumar</a> · Bharat Cloud Technologies · Official website: www.tubepilot.shop</p>
 <div class="hero-social-links" aria-label="Official TubePilot and founder profiles" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px">
 <a href="https://www.linkedin.com/in/bharatcloudtechnologies" target="_blank" rel="noopener noreferrer">Founder LinkedIn</a>
 <a href="https://www.linkedin.com/company/tubepilotapp/" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
