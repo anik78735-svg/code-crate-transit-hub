@@ -15,7 +15,8 @@ TubePilot is an AI-powered YouTube Creator OS that helps creators move from an i
 <span>OPTIMIZE</span>
 <span>SCHEDULE</span>
 <span>GROW</span>
-</div><p class="hero-note">Founded by <a href="/founder">Anik Kumar</a> · Bharat Cloud Technologies · Official website: tubepilot.app</p>
+</div>
+<p class="hero-feature-summary"><strong>Creator tools:</strong> AI ideas & planning · Titles & descriptions · YouTube SEO · Smart scheduling · Analytics</p><p class="hero-note">Founded by <a href="/founder">Anik Kumar</a> · Bharat Cloud Technologies · Official website: tubepilot.app</p>
 <div class="hero-social-links" aria-label="Official TubePilot and founder profiles" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:18px">
 <a href="https://www.linkedin.com/in/bharatcloudtechnologies" target="_blank" rel="noopener noreferrer">Founder LinkedIn</a>
 <a href="https://www.linkedin.com/company/tubepilotapp/" target="_blank" rel="noopener noreferrer">Company LinkedIn</a>
@@ -166,7 +167,7 @@ start creating, or explore the full <a href="/features">feature list</a> and
 <article><h3>What is TubePilot?</h3><p>TubePilot is an AI-powered YouTube Creator OS and Android app designed to help creators plan video ideas, prepare titles and descriptions, work with hashtags and metadata, optimize video SEO, upload and schedule content, and review available channel performance insights in one connected workflow.</p></article>
 <article><h3>Who is the founder of TubePilot?</h3><p>TubePilot was founded by Anik Kumar and is operated by Bharat Cloud Technologies. Visit the <a href="/founder">Founder profile</a> to learn more about the product's creator-first vision and connect through the founder's <a href="https://www.linkedin.com/in/bharatcloudtechnologies" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>.</p></article>
 <article><h3>How can creators grow on YouTube using AI?</h3><p>AI can support the creator workflow by helping brainstorm relevant topics, draft and refine titles and descriptions, organize metadata, prepare a publishing plan, and review performance data. Creators should validate suggestions against their audience, channel analytics and the actual video rather than relying on automated output alone. TubePilot brings several of these tasks together in one workflow.</p></article>
-<article><h3>What are useful AI tools for YouTube creators?</h3><p>Useful creator tools include topic and idea planners, title and description assistants, hashtag and metadata helpers, YouTube SEO checklists, thumbnail planning tools, scheduling workflows and analytics. Explore <a href="/features">TubePilot features</a> or try the separate <a href="/ai-studio">AI Studio</a> topic-to-title, description and hashtag demo.</p></article>
+<article><h3>What are the best AI tools for YouTube creators?</h3><p>Useful creator tools include topic and idea planners, title and description assistants, hashtag and metadata helpers, YouTube SEO checklists, thumbnail planning tools, scheduling workflows and analytics. Explore <a href="/features">TubePilot features</a> or try the separate <a href="/ai-studio">AI Studio</a> topic-to-title, description and hashtag demo.</p></article>
 <div class="hero-cta">
 <a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.tubepilot.app" target="_blank" rel="noopener noreferrer">Download TubePilot on Google Play</a>
 <a class="btn btn-outline btn-lg" href="/faq">Explore all FAQs</a>
